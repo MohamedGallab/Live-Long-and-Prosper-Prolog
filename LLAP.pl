@@ -1,7 +1,7 @@
 :- include('KB.pl').
 
 goal(S):-
-    ids(S, 5).
+    ids(S, 1).
 
 ids(X, L):-
     (call_with_depth_limit(goal2(X),L,R), number(R));
