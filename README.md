@@ -29,7 +29,7 @@ succ_state(s0, F, M, E, 0, 0):-
     energy(E).
 ```
 
-this is the base case. it matches the current state with the initial state of the world once the conditions are met which means that the current plan is a valid plan to reach a goal state.
+this is the base case. it matches the current state with the initial state of the world once the conditions are met which means that the current plan is a valid plan to reach a goal state. where s0 is the initial state and the resources are represented by F, M and E. The last 2 parameters indicate that no buildings of type 1 and 2 are present.
 
 ```prolog
 succ_state(result(b1, S), F, M, E, 1, B2):-
